@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хэрэглэгчийн бүртгэл</title>
+    <style>
+        table, th, td {
+            border: 2px solid rgb(38, 140, 175);
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        input, text {
+            border: 2px solid rgb(38, 140, 175);
+            width: 70%;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        button {
+            border-radius: 10px;
+            padding:15px;
+            margin-top: 15px;
+            float:left;
+            background-color: lightblue;
+            border: 2px solid rgb(38, 140, 175);
+        }
+        table {
+            width: 100%;
+        }
+        .sectionA {
+            width: 30%;
+            float: left;
+        }
+        .sectionB {
+            width: 70%;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="sectionA">
+        <form onsubmit="register(); return false;">
+            <input type="text" placeholder="Овог">
+            <input type="text" placeholder="Нэр">
+            <input type="text" placeholder="Нас">
+            <button type="submit">Бүртгэх</button>
+        </form>
+    </div>
+    <div class="sectionB">
+        <table>
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>ОВОГ</td>
+                    <td>НЭР</td>
+                    <td>НАС</td>
+                    <td>ҮЙЛДЭЛ</td>
+                </tr>
+            </thead>
+            <tbody id="tb"></tbody>
+        </table>
+    </div>
+    <script>
+        let dugaar = 1;
+        function register() {
+            let values = document.getElementsByTagName('input');
+            if (values[0].value && values[1].value && values[2].value) {
+                let newValue = `
+                    <tr>
+                        <td>${dugaar}</td>
+                        <td>${values[0].value}</td>
+                        <td>${values[1].value}</td>
+                        <td>${values[2].value}</td>
+                        <td><button onclick="deleteRow(this)">Устгах</button></td>
+                    </tr>
+                `
+                let tableBody = document.getElementById('tb');
+                tableBody.innerHTML += newValue;
+
+                dugaar++;
+                values[0].value = "";
+                values[1].value = "";
+                values[2].value = "";
+            } else {
+                alert('Бүх талбарыг оруулна уу');
+            }
+        }
+
+        function deleteRow(button) {
+            button.parentNode.parentNode.remove();
+            dugaar--;
+        }
+    </script>
+</body>
+</html>

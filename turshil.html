@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta charset="viewport" content="width=device-width", initial-scale="1.0">
+  <title>Танилцуулга</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr 2fr;
+      gap:10px;
+      width: 100%;
+      max-width: 1500px;
+      margin:0 auto;
+    }
+    .myDiv {
+      display: flex;
+      background-color: rgb(28, 158, 201);
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 75px;
+
+    }
+
+    .button {
+      height: 30px;
+      width: 250px;
+      margin-left: 30px;
+    }
+
+    .div2,
+    .div3,
+    .div4 {
+      margin-top: 10px;
+      float: left;
+    }
+
+    .div2 {
+      text-align: center;
+      width: 35%;
+      flex: 1;
+      height: 810px;
+      background-color: whitesmoke;
+      display: block;
+      margin-top: 20px;
+    }
+
+    .div3 {
+      float: right;
+      text-align: center;
+      width: 64%;
+      flex: 1;
+      height: 700px;
+      background-color: whitesmoke;
+      display: block;
+      margin-top: 20px;
+    }
+
+    .div4 {
+      float: inline-end;
+      text-align: center;
+      width: 64%;
+      flex: 1;
+      height: 100px;
+      background-color: rgb(236, 164, 148);
+    }
+    @media (max-width:1042px){
+      .myDiv{ 
+      margin: 10px 10px;
+      }
+      .button {
+      width: 200px;
+      }
+      .div2{
+        height: 700px;
+        width: 50%;
+      }
+      .div3{
+        width: 50%;
+      }
+      .div4{
+        width: 100%;
+      }
+    }
+    @media (max-width:768px){
+      .myDiv{
+        width: 100%;
+        height: 180px;
+        flex-wrap: wrap;
+      }
+      .div2{
+        width: 100%;
+        height: 500px;
+      }
+      .div3{
+        width: 100%;
+        height:500px;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="myDiv">
+    <a href="table2.html" target="3frame">
+      <button class="button">Нүүр хуудас</button>
+    </a>
+    <a href="photo.html" target="3frame">
+    <button class="button ">Зурагнууд</button>
+    </a>
+    <a href="video.html" target="3frame">
+    <button class="button">Бичлэгүүд</button>
+    </a>
+    <a href="googlemap.html" target="3frame">
+    <button class="button ">Газрын зураг</button>
+    </a>
+    
+  </div>
+  <div class="div2"><img
+      src="https://static.vecteezy.com/system/resources/thumbnails/034/941/316/small/ai-generated-a-little-girl-in-a-yellow-dress-is-smiling-in-a-field-of-flowers-photo.jpg"
+      alt="girl" width="250" height="300" margin-top="30px">
+    <p>Хувийн мэдээлэл</p>
+    <p>Нэр: Я.Номинзул</p>
+    <p>Хүйс: Эм</p>
+    <p>Нас: 19</p>
+
+  </div>
+  <div class="div3">
+    <iframe name="3frame" width="100%" height="100%"></iframe>
+  </div>
+  </div>
+  <div class="div4">Гэрийн хаяг</div>
+  
+
+</body>

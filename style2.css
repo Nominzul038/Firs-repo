@@ -1,0 +1,72 @@
+* {
+    margin:0;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:"Poppins" , Sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    background:url('/Users/nominzulyalaltbayar/Downloads/IMG_1110.JPG') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.nomin {
+    width:300px;
+    height:500px;
+    background-color: transparent;
+    padding:10px 40px;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.398);
+    backdrop-filter:blur;
+
+}
+.nomin h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.nomin .input-box {
+    width: 100%;
+    height: 80px;
+    margin-left:14px;
+}
+.input-box input {
+        text-align:left;
+        width:100%;
+        height:60%;
+        margin-left: -14px;
+        background-color: whitesmoke;
+        border:none;
+        outline:none;
+        border: 2px solid rgba(255, 255, 255, .2);
+        font-size: 16px;
+        color:rgb(6, 5, 5);
+        padding:20px 10px 20px 10px
+        
+}
+.nomin .already-login {
+    display:flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: -20px 0 -20px;
+}
+.already-login a {
+    color: rgb(11, 9, 9);
+    text-decoration: none;
+}
+.already-login a:hover {
+    text-decoration: underline;
+}
+.nomin .button {
+    width: 100%;
+    height: 45px;
+    background:rgb(251, 246, 246);
+    border:none;
+    outline: none;
+    font-size: 15px;
+    margin-top: 50px;
+}
+

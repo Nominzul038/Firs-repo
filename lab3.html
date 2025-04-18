@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8">
+        <style>
+            .nomi {
+                border: 1px solid black; /*solid geh style ugsun*/
+                margin: 25px 50px 75px 100px; /*top-50px, right-30px, bottom-50px, left-80px*/
+                background-color:aquamarine; /*background ungu*/
+            }
+            /**/
+            .nomin {
+                border: 1px solid black; /*solid geh style ugsun*/
+                padding: 50px 30px 50px 80px; /*top-50px, right-30px, bottom-50px, left-80px*/
+                background-color: aquamarine; /*background ungu*/
+            }
+            .nominn {
+                p.dotted {border-style: dotted;} /*Edgeer ni border-iin style-nii torluud yum*/
+                p.dashed {border-style: dashed;}
+                p.solid {border-style: solid;}
+                p.double {border-style: double;}
+                p.groove {border-style: groove;}
+                p.ridge {border-style: ridge;}
+                p.inset {border-style: inset;}
+                p.outset {border-style: outset;}
+                p.none {border-style: none;}
+                p.hidden {border-style: hidden;}
+                p.mix {border-style: dotted dashed solid double;}
+            }
+            .nominnn {
+                border-style: solid;
+                border-width: 5px; /*Border-iin urgun*/
+            }
+            .nominnnn {
+                border-style: solid;
+                border-color:red; /*Border-iin ungu*/
+            }
+            .nominnnnn {
+                border-top-style: dotted; /* deed taliin style*/
+                border-right-style: solid;/* baruun taliin style*/
+                border-bottom-style: dotted; /* dood taliin style*/
+                border-left-style: solid; /*zuun taliin style*/
+            }
+            .nomii {
+                border-style: solid; 
+                border-radius: 10px; /*Border radius buyu untsgiig 10px-eer buurunhii bolgoson*/
+            }
+            .nomiii {
+                outline-style: solid; 
+                outline-color: black;
+                outline-width: 5px; /*hureenii urgun 5px-eer ugsun*/
+                outline-offset:15px ; /*hureenii dotor taliin hemjeeg 15px-eer ugsun*/
+            }
+            .nozu {
+                opacity: 0.5; /*zurgiig 0.5 bolgoson buyu budeg bolgoson*/
+            }
+            #nmuid {
+                background-color: aliceblue !important;
+            }
+            .nmiclass{
+                background-color: grey !important;
+            }
+            p {
+                background-color: purple !important; /*important ugsunuur hamgiin turuund buh ungu purple ungutei baina gesen durem*/
+            }
+        </style>
+        </head>
+        <body>
+            <h2>Margin</h2>
+            <div class="nomi">
+                Монголын шилдэг өгүүллэгүүд болон туужисаас дээжлэн та бүхнийхээ сонорыг байнга мялааж байх болно. ...more ...more. Subscribe. Home. Videos. Playlists.
+            </div>
+            <td>Margin gedeg ni html deer ymar negen elementiin gadna taliin zaig
+                todorhoildog zuil yum. Deerh box harval deed talaas 25px, baruun talaas
+                50px, dood talaas 75px, zuun talaas 100px zai avsan bn. Harin (Margin:25px 50px 75px) baival deed tal 25px, baruun zuun tal 
+                50px, dood tal 75px gesen ug. (Margin:25px 50px;) baival deed dood 25px, baruun zuun 50px gesen ug.
+                (Margin:25px;) gej baival buh talaas 25px avsan gesen ug.
+            </td>
+            <h2>Padding</h2>
+            <div class="nomin">
+                Монголын шилдэг өгүүллэгүүд болон туужисаас дээжлэн та бүхнийхээ сонорыг байнга мялааж байх болно. ...more ...more. Subscribe. Home. Videos. Playlists.
+            </div>
+            <td>Padding gedeg ni html deer ymar negen elementiin dotorh zaig todorhoidog. 
+            </td>
+            <h2>Border</h2>
+            <h3>Border ni tuhain elementiin hureeg todorhoildog.</h3>
+            <div class="nominn">
+                <p class="dotted">Yalaltbayr Nominzul.</p>
+                <p class="dashed">Yalaltbayr Nominzul.</p>
+                <p class="solid">Yalaltbayr Nominzul.</p>
+                <p class="double">Yalaltbayr Nominzul.</p>
+                <p class="groove">Yalaltbayr Nominzul.</p>
+                <p class="ridge">Yalaltbayr Nominzul.</p>
+                <p class="inset">Yalaltbayr Nominzul.</p>
+                <p class="outset">Yalaltbayr Nominzul.</p>
+                <p class="none">Yalaltbayr Nominzul.</p>
+                <p class="hidden">Yalaltbayr Nominzul.</p>
+                <p class="mix">Yalaltbayr Nominzul.</p>
+            </div>
+            <h3>Border style-uudiig deerh maygaar ogch bolno.</h3>
+            <h2>Border width </h2>
+            <div class="nominnn">
+                <p>Yalaltbayar Nominzul.</p>
+            </div>
+            <h3>Border styleg ni solid gej uguud, border width 5px ugsun. Enehuu hureeg 5px-iin orgontei bolgoj baigaa gesen ug.</h3>
+            <h2>Border color</h2>
+            <div class="nominnnn">
+                <p>Yalaltbayar Nominzul</p>
+            </div>
+            <h3>Border color iig ulaan unguur uguv.</h3>
+            <h2>Border sides</h2>
+            <div class="nominnnnn">
+                <p>Yalaltbayar Nominzul.</p>
+            </div>
+            <h3>Taluudad oor2 style ugch bolno.</h3>
+            <h2>Border radius</h2>
+            <div class="nomii">
+                <p>Yalaltbayar Nominzul.</p>
+            </div>
+            <h3>Border radiusiig 10px ogch untsug buurunhii bolson.</h3>
+            <h2>Outline </h2>
+            <div class="nomiii">
+                <p>Yalaltbayar Nominzul</p>
+            </div>
+            <h3>Outline ni bordertoi adilhan ch ylgaatai ni elementiin hemjeend nolooldoggui.
+                Deerh jisheenees harval har ungu ugch, solid styletai, offset ni elemented hamaarahguigeer
+                hureenii hemjeeg tomruulj ugch bn.
+            </h3>
+            <h2>Opacity</h2>
+            <div class="nozu">
+                <img src="/Users/nominzulyalaltbayar/Downloads/IMG_1110.JPG" width="80" height="80">
+            </div>
+            <h3>Opacity ni zuragnii haragdah baidliig gargadag.
+                Herev 0 baival zurag haragdhgui, 1 baival tod haragdana.
+                Deerh jisheenii huvid 0.5 ugsun uchiraas budeg haragdaj baigaa.
+            </h3>
+            <h2>!important</h2>
+            <p class="nmiclass">Yalaltbayar nominzul</p>
+            <p>Yalaltbayr nominzul</p>
+            <p id="nmuid">Yalaltbayar nominzul</p>
+            <h3>importantiig ashiglasan tohioldold, important ashiglasan style ongo geh met davuu erhtei bolno.</h3>
+
+        </body>
+   
+</html>
